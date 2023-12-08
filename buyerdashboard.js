@@ -8,16 +8,13 @@ const properties = [
 function searchProperties() {
     const searchInput = document.getElementById('searchInput').value.toLowerCase();
 
-    // Filter properties based on search input
     const searchResults = properties.filter(property =>
         property.title.toLowerCase().includes(searchInput) ||
         property.location.toLowerCase().includes(searchInput)
     );
 
-    // Clear existing property cards
     clearPropertyCards();
 
-    // Display search results
     displayPropertyCards(searchResults);
 }
 
@@ -37,7 +34,6 @@ function createPropertyCard(property) {
         viewPropertyDetails(property.id);
     };
 
-    // Populate card content
     propertyCard.innerHTML = `
         <img src="property_image${property.id}.jpeg" alt="${property.title}">
         <h3>${property.title}</h3>
@@ -54,12 +50,10 @@ function clearPropertyCards() {
     propertyCardsContainer.innerHTML = ''; // Clear existing cards
 }
 
-// Sample function to view property details
 function viewPropertyDetails(propertyId) {
     console.log(`Viewing details for property ${propertyId}`);
 }
 
-// Sample function to add to wishlist
 function addToWishlist(propertyId) {
     console.log(`Added property ${propertyId} to wishlist`);
 }
