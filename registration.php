@@ -39,7 +39,6 @@ if ($conn->query($sql_create_db) === TRUE)
   
     if ($conn->query($sql_create_table) === TRUE) 
     {
-        echo "Database and Table created successfully";
   
         if ($_SERVER["REQUEST_METHOD"] == "POST") 
         {
@@ -58,6 +57,7 @@ if ($conn->query($sql_create_db) === TRUE)
             if ($conn->query($sql_insert_user) === TRUE) 
             {
                 echo "Registration successful!";
+				echo "<a href=login.html> Login Here!</a> ";
             } 
             else 
             {
