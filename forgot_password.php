@@ -20,7 +20,7 @@
             <input type="submit" value="Send">
         </form>
 
-        <p>Know your password? <a href="login.php">Sign in</a></p>
+        <p>Know your password? <a href="login.html">Sign in</a></p>
     </div>
 </body>
 </html>
