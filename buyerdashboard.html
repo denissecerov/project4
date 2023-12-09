@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Buyer Dashboard</title>
+</head>
+<body>
+    <div class="container">
+        <div class="welcome-note">
+            <h1>Welcome to Your Buyer Dashboard!</h1>
+            <p>Thank you for choosing our platform.</p>
+        </div>
+        
+        <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Search for properties...">
+    <button onclick="searchProperties()">Search</button>
+</div>
+		
+        <div class="property-cards">
+            <div class="property-card" onclick="viewPropertyDetails(propertyId)">
+                <img src="property_image.jpeg" alt="Property Image">
+                <h3>Property Title</h3>
+                <p>Location: Property Location</p>
+                <p>Price: $X,XXX,XXX</p>
+                <button onclick="addToWishlist(propertyId)">Add to Wishlist</button>
+            </div>
+        </div>
+		<div class="property-card" onclick="viewPropertyDetails(propertyId)">
+    <img src="property_image2.jpeg" alt="Property Image">
+    <h3>Property Title</h3>
+    <p>Location: Property Location</p>
+    <p>Price: $X,XXX,XXX</p>
+    <button onclick="addToWishlist(propertyId)">Add to Wishlist</button>
+</div>
+
+<!-- Additional property cards -->
+<div class="property-card" onclick="viewPropertyDetails(propertyId2)">
+    <img src="property_image.jpg" alt="Property Image 2">
+    <h3>Property Title 2</h3>
+    <p>Location: Property Location 2</p>
+    <p>Price: $Y,YYY,YYY</p>
+    <button onclick="addToWishlist(propertyId2)">Add to Wishlist</button>
+</div>
+
+<div class="property-card" onclick="viewPropertyDetails(propertyId3)">
+    <img src="property_image3.jpg" alt="Property Image 3">
+    <h3>Property Title 3</h3>
+    <p>Location: Property Location 3</p>
+    <p>Price: $Z,ZZZ,ZZZ</p>
+    <button onclick="addToWishlist(propertyId3)">Add to Wishlist</button>
+</div>
+
+    </div>
+
+    <script src="buyerdashboard.js"></script>
+</body>
+</html>

@@ -1,3 +1,8 @@
+body {
+    background: url('BG1.jpg') no-repeat;
+    background-size: cover;
+}
+
 .property-card {
 	width: 30%;
     margin: 1%;
@@ -86,4 +91,12 @@
 
 #nextBtn {
     right: 5px;
+}
+.wishlist-btn{
+ color: #101010;
+  font-weight: bold;
+}
+
+input[type=onClick]:hover {
+    background-color: #45a049;
 }
