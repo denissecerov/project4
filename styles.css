@@ -171,13 +171,13 @@ body {
 .descriptionBox:hover
 {
     transform: translateY(-10px);
-    background-color: skyblue;
+    background-color: white;
 }
 
 h3
 {
     font-family: "Arial Black", Times, serif;
-    color: blue;
+    color: skyblue;
 }
 
 .descriptionText
