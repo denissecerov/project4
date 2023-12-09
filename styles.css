@@ -2,6 +2,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 .container {
@@ -61,4 +62,134 @@ body {
     width: 100%;
     border-radius: 8px;
     margin-bottom: 10px;
+}
+
+/* Homepage.html Style */
+.homepageFile
+{
+    background-image: url('homepageBG.jpg');
+}
+
+.headingContainer
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: ivory;
+    height: 80px;
+}
+
+.title
+{
+    font-family: "Ink Free", Times, serif;
+    font-size: 15pt;
+    text-decoration: none;
+    color: #f8742c;
+}
+
+.titlePt2
+{
+    color: skyblue;
+}
+
+.buttons
+{
+    position: relative; top: 40px;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    background-color: #4CAF50;
+    font-weight: bold;
+    transition: background-color 0.5s, color 0.5s;
+}
+.buttons:hover
+{
+    background-color: skyblue;
+    color: #f8742c;
+}
+
+.headingLine
+{
+    position: relative; bottom: 10px;
+}
+
+.footerLine
+{
+    position: relative; top: 10px;
+}
+
+.sloganContainer 
+{
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin: auto;
+    width: 700px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    animation: imageTransition 5s infinite;
+}
+
+@keyframes imageTransition 
+{
+    0% 
+    {
+        background-image: url('property_image.jpeg');
+    }
+    100% 
+    {
+        background-image: url('property_image2.jpeg');
+    }
+}
+
+.slogan
+{
+    position: relative; top: 165px;
+    font-family: Constantia, Times, serif;
+    font-size: 30pt;
+    font-weight: bold;
+    text-shadow: 4px 8px 12px rgba(0, 0, 0, 0.5);
+    color: ivory;
+    text-align: center;
+}
+
+.descriptionContainer
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.descriptionBox
+{
+    border: 3px solid gray;
+    border-radius: 10px;
+    width: 400px;
+    margin: 20px 100px;
+    text-align: center;
+    background-color: ivory;
+    transition: transform 0.3s, background-color 0.3s;
+}
+.descriptionBox:hover
+{
+    transform: translateY(-10px);
+    background-color: skyblue;
+}
+
+h3
+{
+    font-family: "Arial Black", Times, serif;
+    color: blue;
+}
+
+.descriptionText
+{
+    font-family: "Times New Roman", Times, serif;
+    color: #f8742c;
+}
+
+.footerContainer
+{
+    background-color: ivory;
+    height: 90px;
+    text-align: center;
+    font-weight: bold;
 }
