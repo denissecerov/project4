@@ -7,7 +7,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $dbPassword = "your_database_password";
     $dbName = "your_database_name";
 
-
     $conn = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);
 
     if ($conn->connect_error) {
@@ -24,6 +23,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         mail($email, $subject, $message);
 
         echo "If the email address exists in our database, a password reset link will be sent.";
+        
+        header("Location: login.html");
+        exit();
     } else {
         echo "Email not found in our database. Please check the email address.";
     }
@@ -31,3 +33,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $conn->close();
 }
 ?>
+
