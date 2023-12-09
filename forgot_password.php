@@ -5,14 +5,16 @@
     <link rel="stylesheet" type="text/css" href="forgot_password.css"> 
 </head>
 <body>
-    <div class="forgot-password-container">
+    <div class="login-container">
         <h2>Forgot Your Password?</h2>
         <p>Enter your email address and we'll send you a link to set your password.</p>
 
         <form action="forgot_password.php" method="POST">
             <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Enter email" required>
+                <div class="registration-container">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter email" required>
+                </div>
             </div>
             
             <input type="submit" value="Send">
@@ -64,5 +66,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $conn->close();
 }
 ?>
-
-
