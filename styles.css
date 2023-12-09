@@ -2,7 +2,6 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 
 .container {
@@ -68,6 +67,7 @@ body {
 .homepageFile
 {
     background-image: url('homepageBG.jpg');
+    overflow: hidden;
 }
 
 .headingContainer
@@ -192,4 +192,21 @@ h3
     height: 90px;
     text-align: center;
     font-weight: bold;
+}
+
+/* thankYou.html's Styling */
+.thankYouContainer
+{
+    position: relative; top: 300px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin: auto;
+    width: 400px;
+    background-color: ivory;
+    text-align: center;
+}
+
+.homeColor
+{
+    color: #f8742c;
 }
