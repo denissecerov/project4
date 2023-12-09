@@ -1,0 +1,89 @@
+.property-card {
+	width: 30%;
+    margin: 1%;
+    box-sizing: border-box;
+    float: left;
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+	.property-card {
+		width: 48%;
+        margin: 1%;
+    }
+}
+
+@media (max-width: 480px) {
+    .property-card {
+        width: 100%;
+        margin: 2% 0;
+    }
+}
+		
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+        }
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+	color: black;
+    text-decoration: none;
+	cursor: pointer;
+}
+		
+.image-container {
+	display: flex;
+	overflow-x: auto;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.property-image {
+    margin-right: 5px;
+    max-height: 200px; 
+}
+
+.scroll-btn {
+    display: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#prevBtn {
+    left: 5px;
+}
+
+#nextBtn {
+    right: 5px;
+}
