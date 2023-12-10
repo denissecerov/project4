@@ -102,7 +102,7 @@ function viewPropertyDetails(propertyId)
             bedroom: "5",
 			sqft: "5954",
 			bath: "6",
-			description:""
+			description:"Discover luxury living at its finest in this 5-bedroom, 6-bathroom masterpiece located at 340 Falls Point Trl, Johns Creek, GA 30022. Boasting 5,954 square feet of opulent space, this residence seamlessly blends modern design with classic elegance. Priced at $1,175,000, this is your chance to experience the epitome of refined living in Johns Creek."
         };
     }
 	
