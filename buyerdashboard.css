@@ -1,5 +1,5 @@
 body {
-    background: url('BG1.jpg') no-repeat;
+    background: url('BG2.jpg') no-repeat;
     background-size: cover;
 }
 
@@ -11,6 +11,7 @@ body {
     border: 1px solid #ccc;
     padding: 10px;
     text-align: center;
+    background-color: white;
 }
 
 @media (max-width: 768px) {
